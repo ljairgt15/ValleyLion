@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'',component:IndexComponent},
   {path:'**',component:IndexComponent},
   {path:'tienda',component:OnlineStoreComponent},
-  {path:'nosotros',component:AboutUsComponent},
+  {path:'sobre-nosotros',component:AboutUsComponent},
   {path:'contactanos',component:ContactComponent},
   {path:'equipos', component:TeamsComponent},
   {path:'trofeos', component: TrophiesComponent},
