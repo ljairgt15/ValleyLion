@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+.navbar-custom {
+    background-color: #FFFFFF;
+  }
+  
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: #0B3873;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #F5E009; 
+  }
+  
+  .navbar-custom .navbar-toggler {
+    border-color: #0B3873; 
+  }
+  
+  .navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='#F5E009' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
