@@ -21,3 +21,9 @@
   .navbar-custom .nav-item.active .nav-link {
     color: #F5E009; /* Texto azul oscuro para el enlace activo */
   }
+  #social-network-box{
+    margin-right: 5px;
+  }
+  #social-network-box>a{
+    margin-left: 10%;
+  }
