@@ -11,7 +11,6 @@ import { NewsComponent } from './components/news/news.component';
 
 const routes: Routes = [
   {path:'',component:IndexComponent},
-  {path:'**',component:IndexComponent},
   {path:'tienda',component:OnlineStoreComponent},
   {path:'sobre-nosotros',component:AboutUsComponent},
   {path:'contactanos',component:ContactComponent},
