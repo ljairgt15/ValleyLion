@@ -1,2 +1,82 @@
-<h2>Sobre Nosotros</h2>
-<p>La Academia de Fútbol se dedica a formar a jóvenes talentos en el deporte rey.</p>
+<section class="wow fadeInUp py-5" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 about-img">
+                <img alt="nosotros los leones" src="assets/nosotros/cover.jpg" class="img-fluid rounded" />
+            </div>
+            <div class="col-lg-7 content">
+                <div class="section-header">
+                    <h2>¿QUÉ RESALTA EN NOSOTROS?</h2>
+                    <p>{{summary}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="goals" class="container py-5">
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h4 class="card-title">MISIÓN</h4>
+                    <p class="card-text">{{ mission }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h4 class="card-title">VISIÓN</h4>
+                    <p class="card-text">{{ vision }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wow fadeInUp py-5" id="call-to-action">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-9 text-center text-lg-left">
+                <h3 class="cta-title">Únete a nosotros!</h3>
+                <p class="cta-text">¡Estamos en búsqueda de talento como el tuyo! Si estás listo para enfrentar desafíos
+                    apasionantes y crecer profesionalmente en un ambiente dinámico e innovador, esta es tu oportunidad.
+                    ¡Únete a nuestro equipo y juntos transformemos el futuro de nuevas promesas!</p>
+            </div>
+            <div class="col-lg-3 text-center">
+                <a class="btn btn-primary cta-btn align-middle" href="unete.html">Únete <i class="bi bi-people"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="valores" class="container py-5">
+    <div class="section-header text-center mb-4">
+        <h2>Nuestros Valores</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 mb-4" *ngFor="let value of values">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="icon mb-3">
+                        <img [src]="value.iconUrl" alt="" class="img-fluid" />
+                    </div>
+                    <h4 class="card-title">{{ value.title }}</h4>
+                    <p class="card-text">{{ value.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wow fadeInUp container py-5" id="clients">
+    <div class="section-header text-center mb-4">
+        <h2>Nuestros Auspiciantes</h2>
+    </div>
+    <div class="owl-carousel clients-carousel">
+        <img alt="" style="height: 70px; width: 200px;" src="assets/img/partners/microsoft.png" />
+        <img alt="" style="height: 70px; width: 200px;" src="assets/img/partners/acronis.png" />
+        <!-- Añadir más imágenes de auspiciantes aquí -->
+    </div>
+</section>
