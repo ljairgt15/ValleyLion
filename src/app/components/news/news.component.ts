@@ -12,9 +12,9 @@ export class NewsComponent implements OnInit {
   constructor() { }
   newsList: INews[] = [
     {
-      title: 'Independiente del Valle inauguró el primer estadio de Latinoamérica para un equipo femenino: Dragonas IDV',
-      description: 'Dragonas',
-      imageUrl: 'assets/logo.png',
+      title: 'Nuestros procesos siguen logrando títulos y experiencias',
+      description: 'Procesos',
+      imageUrl: 'assets/index/equipo2.jpg',
       date: 'mayo 13, 2024'
     },
     {
