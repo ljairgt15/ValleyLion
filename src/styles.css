@@ -1,3 +1,4 @@
+/*NAV*/
 .navbar-custom {
     background-color: #FFFFFF;
   }
@@ -27,3 +28,23 @@
   #social-network-box>a{
     margin-left: 10%;
   }
+  /*INDEX*/
+  .hero-section {
+    background-image: url('assets/index/equipo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #FFFFFF; 
+    
+  }
+  
+  .hero-heading {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    background-color: transparent;
+    color: #F5E009; /* Azul oscuro */
+  }
+  
