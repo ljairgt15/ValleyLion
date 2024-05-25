@@ -33,11 +33,17 @@
   .card-category {
     font-size: 1rem;
     color: #F5E009;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .card-title {
     font-size: 1.2rem;
     margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .card-date {
