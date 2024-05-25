@@ -47,4 +47,9 @@
     background-color: transparent;
     color: #F5E009; /* Azul oscuro */
   }
-  
+  /*FOOTER*/
+  #footer-box{
+    background-color: #0B3873;
+    color: #FFFFFF;
+    padding: 20px 0;
+  }
