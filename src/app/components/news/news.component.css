@@ -1,39 +1,28 @@
-
-/*NEWS*/
 .carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .card {
-    width: 18rem;
-    margin: 10px;
-  }
-  
-  .carousel-container {
-    display: flex;
-    justify-content: center;
-    /* Centrar horizontalmente */
-    align-items: center;
-    /* Centrar verticalmente si es necesario */
-    height: 100%;
-    /* Asegura que el contenedor ocupe todo el espacio disponible */
-  }
-  
-  /* Custom styles for carousel control icons */
-  .carousel-control-prev-icon {
-    background-color: #f5e009;
-    /* Fondo de las flechas */
-    mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="%23ffffff" d="M5.5 0L7 1.5 3.5 5 7 8.5 5.5 10 0 5z"/></svg>');
-    -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="%23ffffff" d="M5.5 0L7 1.5 3.5 5 7 8.5 5.5 10 0 5z"/></svg>');
-    mask-size: contain;
-    -webkit-mask-size: contain;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
-  }
-  
-  .carousel-control-next-icon {
+    text-align: center;
+}
+
+.card {
+    width: 80%;
+    max-width: 800px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.carousel-control-next-icon {
     background-color: #f5e009;
     /* Fondo de las flechas */
     mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="%23ffffff" d="M2.5 0L1 1.5 4.5 5 1 8.5 2.5 10 7 5z"/></svg>');
@@ -42,4 +31,16 @@
     -webkit-mask-size: contain;
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
-  }
+}
+
+/* Custom styles for carousel control icons */
+.carousel-control-prev-icon {
+    background-color: #f5e009;
+    /* Fondo de las flechas */
+    mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="%23ffffff" d="M5.5 0L7 1.5 3.5 5 7 8.5 5.5 10 0 5z"/></svg>');
+    -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path fill="%23ffffff" d="M5.5 0L7 1.5 3.5 5 7 8.5 5.5 10 0 5z"/></svg>');
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
