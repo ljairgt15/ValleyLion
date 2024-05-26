@@ -76,7 +76,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: auto;
-    max-width: 600px;
-    max-height: 100%;
+    width: 100%;
+    max-width: 600px;  /* Ancho máximo */
+    max-height: 100%;  /* Altura máxima fija */
+    overflow: hidden;  /* Asegúrate de que el contenido adicional se recorte */
   }
+  
