@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppConstants } from 'src/constants/AppConstants';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router'; // Importa Router
 
 @Component({
   selector: 'app-contact',
@@ -16,7 +17,7 @@ export class ContactComponent implements OnInit {
   academyName:string = AppConstants.ACADEMY_NAME;
 
   contactForma: FormGroup;
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router:Router) {
     this.contactForma = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -28,10 +29,7 @@ export class ContactComponent implements OnInit {
     if (this.contactForma.valid) {
       const formData = this.contactForma.value;
       console.log('Form Data Submitted:', formData);
-      // Aquí puedes agregar la lógica para enviar los datos al servidor, por ejemplo usando HttpClient
-      // this.httpClient.post('your-api-url', formData).subscribe(response => {
-      //   console.log('Response from server:', response);
-      // });
+      this.router.navigate(['/noticias']);
     } else {
       console.log('Form is not valid');
     }
