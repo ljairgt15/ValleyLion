@@ -52,7 +52,7 @@
   }
   
   .image-container img {
-    width: auto;
+    width: 20%;
     max-width: 50%; /* Ajusta este valor según lo necesites */
     display: inline-block; /* Asegura que la imagen se trate como un elemento en línea */
   }
