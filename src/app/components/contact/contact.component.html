@@ -1,2 +1,77 @@
-<h2>Contacto</h2>
-<p>Puedes contactarnos a través del correo electrónico: leonesdelvalle.adm@gmail.com</p>
+<div class="contact-container">
+    <div class="contact-form">
+        <h2>Contáctate con nosotros</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <div class="contact-info">
+        <h2>Escríbenos en nuestras redes sociales</h2>
+        <div class="row">
+            <div class="col-12">
+                <a href={{whatsappUrl}} target="_blank" class="text-decoration-none">
+                    <div class="card text-center">
+                        <div class="image-container">
+                            <img src="assets/socialNetwork/whatsapp-icon.png" class="card-img-top" alt="whatsapp">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">WhatsApp</p>
+                            <p class="card-text">{{cellPhoneNumber}}</p>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href={{facebookUrl}} target="_blank" class="text-decoration-none">
+                    <div class="card text-center">
+                        <img src="assets/socialNetwork/facebook-icon.png" class="card-img-top" alt="Facebook">
+                        <div class="card-body">
+                            <p class="card-text">Facebook</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="https://instagram.com" target="_blank" class="text-decoration-none">
+                    <div class="card text-center">
+                        <img src="assets/socialNetwork/instagram-icon.png" class="card-img-top" alt="Instagram">
+                        <div class="card-body">
+                            <p class="card-text">Instagram</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href={{tiktokUrl}} target="_blank" class="text-decoration-none">
+                    <div class="card text-center">
+                        <img src="assets/socialNetwork/tik-tok-icon.png" class="card-img-top" alt="Instagram">
+                        <div class="card-body">
+                            <p class="card-text">Tik Tok</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <p class="card-text">{{academyName}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
