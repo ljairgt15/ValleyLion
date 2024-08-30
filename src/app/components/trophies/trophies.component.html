@@ -1,2 +1,20 @@
-<h2>Trofeos</h2>
-<p>Estamos orgullosos de nuestros logros y trofeos ganados en diversas competiciones.</p>
+<div class="container mt-5">
+    <h2 class="mb-4">Palmarés</h2>
+    <p>Estamos orgullosos de nuestros logros y trofeos ganados en diversas competiciones.</p>
+    <div *ngFor="let title of titles" class="card mb-4 shadow-sm">
+        <div class="row no-gutters">
+            <div class="col-md-2 d-flex align-items-center justify-content-center">
+                <img [src]="title.imageUrl" class="card-img p-3" alt="{{title.name}}">
+            </div>
+            <div class="col-md-10">
+                <div class="card-body">
+                    <h5 class="card-title">{{ title.timesWon ? title.timesWon : '' }} {{ title.name }}</h5>
+                    <p class="card-text text-muted">{{ title.category }}</p>
+                    <p class="card-text">
+                        <small class="text-muted">{{ title.dates.join(', ') }}</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
