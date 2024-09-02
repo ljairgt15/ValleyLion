@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
+  images = [
+    { url: 'path/to/image1.jpg', alt: 'Descripción 1' },
+    { url: 'path/to/image2.jpg', alt: 'Descripción 2' },
+    // Agrega más imágenes según sea necesario
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
