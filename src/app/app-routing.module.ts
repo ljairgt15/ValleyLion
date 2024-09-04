@@ -17,7 +17,9 @@ const routes: Routes = [
   {path:'equipos', component:TeamsComponent},
   {path:'trofeos', component: TrophiesComponent},
   {path:'galeria', component:GalleryComponent},
-  {path:'noticias',component:NewsComponent}
+  {path:'noticias',component:NewsComponent},
+  {path:'trofeos',component:TrophiesComponent},
+
 
 ];
 
