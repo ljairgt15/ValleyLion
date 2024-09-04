@@ -1,1 +1,78 @@
-<p>teams works!</p>
+<div class="container mt-5">
+    <h2 class="text-center">Primer Equipo</h2>
+    <div class="row">
+      <div class="col-12">
+        <h3>Portero</h3>
+        <div class="d-flex flex-wrap justify-content-start">
+          <div *ngFor="let player of goalkeepers" class="card m-2" style="width: 10rem;">
+            <img [src]="player.image" class="card-img-top" alt="{{player.name}}">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{player.number}}. {{player.name}}</h5>
+              <p class="card-text">{{player.position}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <h3>Portero</h3>
+        <div class="d-flex flex-wrap justify-content-start">
+          <div *ngFor="let player of goalkeepers" class="card m-2" style="width: 10rem;">
+            <img [src]="player.image" class="card-img-top" alt="{{player.name}}">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{player.number}}. {{player.name}}</h5>
+              <p class="card-text">{{player.position}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <h3>Defensa</h3>
+        <div class="d-flex flex-wrap justify-content-start">
+          <div *ngFor="let player of goalkeepers" class="card m-2" style="width: 10rem;">
+            <img [src]="player.image" class="card-img-top" alt="{{player.name}}">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{player.number}}. {{player.name}}</h5>
+              <p class="card-text">{{player.position}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <h3>Centrocampista</h3>
+        <div class="d-flex flex-wrap justify-content-start">
+          <div *ngFor="let player of goalkeepers" class="card m-2" style="width: 10rem;">
+            <img [src]="player.image" class="card-img-top" alt="{{player.name}}">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{player.number}}. {{player.name}}</h5>
+              <p class="card-text">{{player.position}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <h3>Delantero</h3>
+        <div class="d-flex flex-wrap justify-content-start">
+          <div *ngFor="let player of goalkeepers" class="card m-2" style="width: 10rem;">
+            <img [src]="player.image" class="card-img-top" alt="{{player.name}}">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{player.number}}. {{player.name}}</h5>
+              <p class="card-text">{{player.position}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <h3>Cuerpo Técnico</h3>
+        <div class="d-flex flex-wrap justify-content-start">
+          <div *ngFor="let player of goalkeepers" class="card m-2" style="width: 10rem;">
+            <img [src]="player.image" class="card-img-top" alt="{{player.name}}">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{player.number}}. {{player.name}}</h5>
+              <p class="card-text">{{player.position}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
