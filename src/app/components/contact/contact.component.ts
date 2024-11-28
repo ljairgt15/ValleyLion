@@ -15,6 +15,7 @@ export class ContactComponent implements OnInit {
   tiktokUrl: string = AppConstants.TIKTOK_URL;
   cellPhoneNumber: string = "0"+AppConstants.CELLPHONE_NUMBER;
   academyName:string = AppConstants.ACADEMY_NAME;
+  gmail:string=AppConstants.GMAIL;
 
   contactForma: FormGroup;
   constructor(private fb: FormBuilder, private router:Router) {
