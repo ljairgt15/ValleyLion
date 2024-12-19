@@ -1,3 +1,45 @@
+.filter-sort-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Espacio entre grupos */
+  align-items: center;
+  margin: 16px 0;
+}
+
+.filter-group, .sort-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Espacio entre el label y los select */
+}
+
+.filter-group select, .sort-group select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Se ajusta al contenedor */
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .filter-sort-container {
+    flex-wrap: nowrap; /* Mantener todo en una sola línea en pantallas más grandes */
+  }
+  .filter-group, .sort-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+  .filter-group select, .sort-group select {
+    width: auto; /* Elimina la limitación de ancho en pantallas grandes */
+  }
+}
+
 .product-grid {
     display: flex;
     flex-wrap: wrap;
