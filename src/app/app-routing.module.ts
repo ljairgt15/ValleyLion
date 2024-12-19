@@ -8,13 +8,15 @@ import { TeamsComponent } from './components/teams/teams.component';
 import { TrophiesComponent } from './components/trophies/trophies.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { NewsComponent } from './components/news/news.component';
+import { CatalogTeamComponent } from './components/catalog-team/catalog-team.component';
 
 const routes: Routes = [
   {path:'',component:IndexComponent},
   {path:'tienda',component:OnlineStoreComponent},
   {path:'sobre-nosotros',component:AboutUsComponent},
   {path:'contactanos',component:ContactComponent},
-  {path:'equipos', component:TeamsComponent},
+  {path:'equipos/:id', component:TeamsComponent},
+  {path:'equipos', component:CatalogTeamComponent},
   {path:'trofeos', component: TrophiesComponent},
   {path:'galeria', component:GalleryComponent},
   {path:'noticias',component:NewsComponent},

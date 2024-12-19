@@ -12,6 +12,7 @@ import { TrophiesComponent } from './components/trophies/trophies.component';
 import { TeamsComponent } from './components/teams/teams.component';
 import { NewsComponent } from './components/news/news.component';
 import { NavComponent } from './components/nav/nav.component';
+import { CatalogTeamComponent } from './components/catalog-team/catalog-team.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavComponent } from './components/nav/nav.component';
     TrophiesComponent,
     TeamsComponent,
     NewsComponent,
-    NavComponent
+    NavComponent,
+    CatalogTeamComponent
   ],
   imports: [
     BrowserModule,
