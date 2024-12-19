@@ -1,0 +1,26 @@
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espacio entre tarjetas */
+    justify-content: center;
+    margin: 10px 0px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: #f9f9f9;
+    max-width: 200px; /* Ancho máximo para uniformidad */
+  }
+  
+  .product-card img {
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    height: 150px; /* Altura fija */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor manteniendo la proporción */
+    background-color: #ececec; /* Fondo para imágenes pequeñas */
+    border-radius: 8px;
+    padding: 8px; /* Espaciado interno opcional */
+  }
+  

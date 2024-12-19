@@ -6,8 +6,8 @@ import { Product } from '../models/product';
 })
 export class ProductService {
   private products: Product[] = [
-    { id: 1, name: 'Camiseta Authentic Hombre Primera Equipación Blanca 24/25', price: 150, category: 'Camisetas', imageUrl: 'path/to/image1.jpg', sizeOptions: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'], description: 'Camiseta oficial del equipo.', genre:'F',equipmentType:'PRIMERA' },
-    { id: 2, name: 'Camiseta Hombre Primera Equipación Blanca 24/25', price: 100, category: 'Camisetas', imageUrl: 'path/to/image2.jpg', sizeOptions: ['XS', 'S', 'M', 'L', 'XL'], description: 'Camiseta para aficionados.', genre:'F',equipmentType:'PRIMERA' },
+    { id: 1, name: 'Camiseta Authentic Niño Primera Equipación Blanca 24/25', price: 150, category: 'Camisetas', imageUrl: 'assets/logo.png', sizeOptions: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'], description: 'Camiseta oficial del equipo.', genre:'CH',equipmentType:'PRIMERA', relevance:1},
+    { id: 2, name: 'Camiseta Femenina Primera Equipación Blanca 24/25', price: 100, category: 'Camisetas', imageUrl: 'assets/logo.png', sizeOptions: ['XS', 'S', 'M', 'L', 'XL'], description: 'Camiseta para aficionados.', genre:'F',equipmentType:'PRIMERA', relevance:2},
     // Más productos...
   ];
   getProducts(): Product[] {

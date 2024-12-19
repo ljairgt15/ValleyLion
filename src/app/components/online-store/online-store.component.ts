@@ -28,18 +28,18 @@ export class OnlineStoreComponent implements OnInit {
     this.filteredProducts = this.productService.sortProducts(this.filteredProducts, this.sortCriteria);
   }
 
-  onGenreChange(genre: string) {
-    this.selectedGenre = genre;
+  onGenreChange(event: any) {
+    this.selectedGenre = event.target.value;
     this.applyFiltersAndSort();
   }
 
-  onEquipmentTypeChange(equipmentType: string) {
-    this.selectedEquipmentType = equipmentType;
+  onEquipmentTypeChange(event: any) {
+    this.selectedEquipmentType = event.target.value;
     this.applyFiltersAndSort();
   }
 
-  onSortChange(criteria: string) {
-    this.sortCriteria = criteria;
+  onSortChange(event: any) {
+    this.sortCriteria = event.target.value;
     this.applyFiltersAndSort();
   }
 
