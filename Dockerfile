@@ -7,7 +7,7 @@ WORKDIR /app
 # Copiar los archivos de dependencias al contenedor
 COPY package*.json ./
 
-# Instalar Angular CLI globalmente (opcional) y las dependencias del proyecto
+# Instalar Angular CLI globalmente (opcional), luego las dependencias del proyecto
 RUN npm install -g @angular/cli@14.2.13 \
     && npm install
 
