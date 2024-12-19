@@ -12,21 +12,21 @@ export class TrophiesComponent implements OnInit {
       name: 'Torneo Castro Loaiza',
       dates: ['11 de diciembre del año 2023'],
       category: 'U12',
-      imageUrl: 'ruta_a_la_imagen',
+      imageUrl: 'assets/logo.png',
     },
     {
       name: 'San Carlos JD PRO Events',
       timesWon: 1,
       dates: ['1955-56'],
       category: 'U11',
-      imageUrl: 'ruta_a_la_imagen',
+      imageUrl: 'assets/logo.png',
     },
     {
       name: 'Oyambarillo',
       timesWon: 1,
       dates: ['2022'],
       category: 'U8',
-      imageUrl: 'ruta_a_la_imagen',
+      imageUrl: 'assets/logo.png',
     }
   ];
 
