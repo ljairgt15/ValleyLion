@@ -1,0 +1,42 @@
+name: CI Pipeline for Angular with Docker
+
+on:
+  push:
+    branches:
+      - master
+      - Develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout: Descargar el código fuente del repositorio
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Set up Node.js: Configurar Node.js en el runner
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.15.1
+
+      # 3. Install dependencies: Instalar dependencias de Node.js
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Build Angular app: Construir la aplicación Angular en modo producción
+      - name: Build Angular app
+        run: npm run build --prod
+
+      # 5. Build Docker image: Construir la imagen Docker usando el Dockerfile
+      - name: Build Docker image
+        run: |
+          docker build -t my-angular-app:latest .
+
+      # 6. Test Docker container: Validar que el contenedor funciona correctamente
+      - name: Test Docker container
+        run: |
+          docker run -d -p 8080:4200 my-angular-app:latest
+          sleep 10 # Dar tiempo para que el contenedor se inicie
+          curl -f http://localhost:8080 || exit 1
