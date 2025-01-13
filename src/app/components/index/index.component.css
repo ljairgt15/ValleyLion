@@ -2,7 +2,7 @@
 /*INDEX*/
 /*COVER*/
 .hero-section {
-    background-image: url('/assets/index/equipo.jpg');
+    background-image: url('/assets/index/portada.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 0;
@@ -13,6 +13,10 @@
   .hero-heading {
     font-size: 3rem;
     font-weight: bold;
+    text-shadow:  2px 2px 4px rgba(0,0,0,0.5);
+  }
+  .legend{
+    text-shadow:  2px 2px 4px rgba(0,0,0,0.5);
   }
   
   .highlight {
