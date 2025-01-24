@@ -7,9 +7,9 @@ import { IValue } from 'src/app/models/value';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent implements OnInit {
-  summary:string="Nace un 9 de marzo en la comunidad de “Oyambarillo” al nor-oriente de la ciudad de Quito, capital del Ecuador, por sus creadores Saúl y Jair Gómez, quienes fundaron esta escuela de fútbol con el sueño de que un día alguien de su comunidad logre convertirse en un profesional y represente a Oyambarillo ante el mundo.";
-  mission: string = "Nuestra misión es formar jóvenes futbolistas con disciplina, pasión y valores, brindándoles las herramientas necesarias para alcanzar su máximo potencial dentro y fuera de la cancha, mientras inspiran orgullo en nuestra comunidad.";
-  vision: string = "En cinco años, nuestra visión es ser reconocidos como una escuela de fútbol líder en la formación de talentos, destacando por nuestro compromiso con el desarrollo integral de nuestros jugadores y por proyectar a Oyambarillo en el ámbito deportivo nacional e internacional.";
+  summary:string="Nace un 9 de marzo del 2021 en la comunidad de “Oyambarillo” al Nortoriente de la ciudad de quito capital del ecuador, por sus creadores Saúl y Jair Gómez, actuales administradores ambos con gran experiencia en el ámbito futbolístico.";
+  mission: string = "Formar integralmente a niños y jóvenes a través del fútbol, ofreciendo una enseñanza deportiva de excelencia que fomente valores como la disciplina. Utilizamos el deporte como herramienta para desarrollar habilidades deportivas, emocionales y sociales en un entorno inclusivo y profesional, donde los sueños y talentos de nuestros jugadores se conviertan en oportunidades para destacar como deportistas y como personas, tanto individualmente como en equipo.";
+  vision: string = "Ser reconocidos a nivel nacional como una academia que forma no solo futbolistas de alto rendimiento, sino también ciudadanos ejemplares. Queremos liderar el camino en la innovación y la enseñanza del fútbol base, inspirando a futuras generaciones a alcanzar su máximo potencial.";
   values: IValue[] = [
     {
       title: 'Pasión por el Fútbol',
