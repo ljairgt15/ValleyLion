@@ -9,23 +9,44 @@ import { Title } from 'src/app/models/title';
 export class TrophiesComponent implements OnInit {
   titles: Title[] = [
     {
-      name: 'Torneo Castro Loaiza',
-      dates: ['11 de diciembre del año 2023'],
+      name: 'Liga Parroquial Puembo',
+      position:'CAMPEÓN',
+      rivals:6,
+      dates: ['Enero 2023'],
       category: 'U12',
       imageUrl: 'assets/logo.png',
     },
     {
+      name: 'Torneo Castro Loaiza',
+      position:'SUBCAMPEÓN',
+      rivals:8,
+      dates: ['Diciembre 2023'],
+      category: 'U10',
+      imageUrl: 'assets/logo.png',
+    },
+    {
       name: 'San Carlos JD PRO Events',
-      timesWon: 1,
-      dates: ['1955-56'],
-      category: 'U11',
+      position:'TERCER LUGAR',
+      rivals:8,
+      dates: ['Marzo 2021'],
+      category: 'U10',
       imageUrl: 'assets/logo.png',
     },
     {
       name: 'Oyambarillo',
-      timesWon: 1,
-      dates: ['2022'],
+      position:'CAMPEÓN',
+      rivals:8,
+      dates: ['Diciembre 2022'],
       category: 'U8',
+      imageUrl: 'assets/logo.png',
+    },
+    
+    {
+      name: 'Oyambarillo',
+      position:'TERCER LUGAR',
+      rivals:6,
+      dates: ['Diciembre 2022'],
+      category: 'U10',
       imageUrl: 'assets/logo.png',
     }
   ];

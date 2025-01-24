@@ -12,27 +12,21 @@ export class NewsComponent implements OnInit {
   constructor() { }
   newsList: INews[] = [
     {
-      title: 'Nuestros procesos siguen logrando títulos y experiencias',
-      description: 'Procesos',
+      title: 'LEONES PRO, entrenamiento a alto nivel',
+      description: 'FORMATIVAS PROFESIONALES',
       imageUrl: 'assets/index/equipo2.jpg',
       date: 'mayo 13, 2024'
     },
     {
-      title: 'COMUNICADO DE PRENSA: Juan Tuquerrez (13) al Club Deportivo El Nacional',
-      description: 'Formativas',
+      title: 'COMUNICADO DE PRENSA: Juan Tuquerrez (13) al Vinotinto FC',
+      description: 'FORMATIVAS PROFESIONALES',
       imageUrl: 'assets/news/juanitoNacho.jpg',
       date: 'mayo 13, 2024'
     },
     {
-      title: 'Independiente del Valle inauguró el primer estadio de Latinoamérica para un equipo femenino: Dragonas IDV',
-      description: 'Dragonas',
-      imageUrl: 'assets/index/equipo.jpg',
-      date: 'mayo 13, 2024'
-    },
-    {
-      title: 'COMUNICADO DE PRENSA: Juan Tuquerrez (13) al Club Deportivo El Nacional',
-      description: 'Formativas',
-      imageUrl: 'assets/index/equipo2.jpg',
+      title: 'COMUNICADO DE PRENSA: Damián Gómez (13) al Vinotinto FC',
+      description: 'FORMATIVAS PROFESIONALES',
+      imageUrl: 'assets/news/damianVinotinto.jpg',
       date: 'mayo 13, 2024'
     },
   ];

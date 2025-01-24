@@ -6,9 +6,9 @@ import { Product } from '../models/product';
 })
 export class ProductService {
   private products: Product[] = [
-    { id: 1, name: 'Camiseta Authentic Niño Primera Equipación Blanca 24/25', price: 150, category: 'Camisetas', imageUrl: 'assets/logo.png', sizeOptions: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'], description: 'Camiseta oficial del equipo.', genre:'CH',equipmentType:'PRIMERA', relevance:1},
-    { id: 2, name: 'Camiseta Femenina Primera Equipación Blanca 24/25', price: 100, category: 'Camisetas', imageUrl: 'assets/logo.png', sizeOptions: ['XS', 'S', 'M', 'L', 'XL'], description: 'Camiseta para aficionados.', genre:'F',equipmentType:'PRIMERA', relevance:2},
-    // Más productos...
+    { id: 1, name: 'Gorra oficial Leones del Valle', price: 7, category: 'Accesorios', imageUrl: 'assets/store/gorra.jpg', sizeOptions: ['XS', 'S', 'M', 'L', 'XL'], description: 'Gorra oficial temprada 2024-2025', genre:'A',equipmentType:'PRIMERA', relevance:1},
+    { id: 2, name: 'Camiseta Primera Equipación', price: 15, category: 'Camisetas', imageUrl: 'assets/store/camisetas-padres.jpg', sizeOptions: ['XS', 'S', 'M', 'L', 'XL'], description: 'Camiseta para papitos 2024-2025', genre:'A',equipmentType:'PRIMERA', relevance:2},
+    
   ];
   getProducts(): Product[] {
     return this.products;
