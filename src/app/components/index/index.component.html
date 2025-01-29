@@ -1,9 +1,16 @@
-<section class="video-section">
-  <video #videoPlayer autoplay muted loop class="fullscreen-video" preload="auto">
+<section class="video-section" (click)="registrarInteraccion($event)">
+  <!-- Imagen de portada con mensaje (se muestra solo la primera vez) -->
+  <div *ngIf="mostrarPortada" class="portada">
+    <img src="assets/index/portada.jpg" alt="Portada">
+    <p class="mensaje-portada">Haz clic para empezar este viaje en nuestra manada</p>
+  </div>
+
+  <video #videoPlayer autoplay muted loop preload="auto" class="fullscreen-video">
     <source src="assets/index/portada.mp4" type="video/mp4">
     Tu navegador no soporta el elemento de video.
   </video>
 </section>
+
 
 <!-- <section class="hero-section">
   <div class="container">

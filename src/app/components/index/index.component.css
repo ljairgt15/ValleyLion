@@ -4,7 +4,68 @@
   width: 100%;
   height: 100vh; /* Video ocupa el 100% del viewport */
   overflow: hidden;
+  cursor: pointer;
 }
+
+/* Portada con imagen y mensaje */
+.portada {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Filtro oscuro para mejorar la visibilidad del mensaje */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Imagen de la portada */
+.portada img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Mensaje de la portada */
+.mensaje-portada {
+  position: absolute;
+  bottom: 5%;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Efecto de desvanecimiento cuando se oculta */
+.portada.ng-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/* Imagen de portada */
+.portada {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Ocultar la imagen cuando el video se inicia */
+.portada.ng-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
 
 .fullscreen-video {
   position: absolute;
