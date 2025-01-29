@@ -30,7 +30,8 @@ export class ContactComponent implements OnInit {
     if (this.contactForma.valid) {
       const formData = this.contactForma.value;
       console.log('Form Data Submitted:', formData);
-      this.router.navigate(['/noticias']);
+      //TODO JG poner un modal de que se ha enviado
+      this.router.navigate(['/leones-del-valle-oyambarillo/noticias']);
     } else {
       console.log('Form is not valid');
     }
