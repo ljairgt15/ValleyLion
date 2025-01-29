@@ -11,16 +11,16 @@ import { NewsComponent } from './components/news/news.component';
 import { CatalogTeamComponent } from './components/catalog-team/catalog-team.component';
 
 const routes: Routes = [
-  {path:'leones-del-valle-oyambarillo',component:IndexComponent},
-  {path:'leones-del-valle-oyambarillo/tienda',component:OnlineStoreComponent},
-  {path:'leones-del-valle-oyambarillo/sobre-nosotros',component:AboutUsComponent},
-  {path:'leones-del-valle-oyambarillo/contactanos',component:ContactComponent},
-  {path:'leones-del-valle-oyambarillo/equipos/:id', component:TeamsComponent},
-  {path:'leones-del-valle-oyambarillo/equipos', component:CatalogTeamComponent},
-  {path:'leones-del-valle-oyambarillo/trofeos', component: TrophiesComponent},
-  {path:'leones-del-valle-oyambarillo/galeria', component:GalleryComponent},
-  {path:'leones-del-valle-oyambarillo/noticias',component:NewsComponent},
-  {path:'leones-del-valle-oyambarillo/trofeos',component:TrophiesComponent},
+  {path:'',component:IndexComponent},
+  {path:'tienda',component:OnlineStoreComponent},
+  {path:'sobre-nosotros',component:AboutUsComponent},
+  {path:'contactanos',component:ContactComponent},
+  {path:'equipos/:id', component:TeamsComponent},
+  {path:'equipos', component:CatalogTeamComponent},
+  {path:'trofeos', component: TrophiesComponent},
+  {path:'galeria', component:GalleryComponent},
+  {path:'noticias',component:NewsComponent},
+  {path:'trofeos',component:TrophiesComponent},
 
 
 ];
