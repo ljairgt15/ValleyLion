@@ -12,13 +12,33 @@ export class AboutUsComponent implements OnInit {
   vision: string = "Ser reconocidos a nivel nacional como una academia que forma no solo futbolistas de alto rendimiento, sino también ciudadanos ejemplares. Queremos liderar el camino en la innovación y la enseñanza del fútbol base, inspirando a futuras generaciones a alcanzar su máximo potencial.";
   values: IValue[] = [
     {
+      title: 'Disciplina',
+      description: 'La base para alcanzar cualquier objetivo. Enseñamos a nuestros jugadores a mantener constancia y esfuerzo tanto en los entrenamientos como en su vida diaria, entendiendo que el éxito requiere dedicación y compromiso.',
+      iconUrl: 'assets/nosotros/disciplina.png'
+    },
+    {
+      title: 'Integridad',
+      description: 'Promovemos la honestidad y la coherencia en cada acción. En Leones del Valle, buscamos formar personas que actúen con rectitud y principios en todas las áreas de su vida.',
+      iconUrl: 'assets/nosotros/integridad.png'
+    },
+    {
+      title: 'Respeto',
+      description: 'Fomentamos el respeto hacia compañeros, rivales, entrenadores y uno mismo. Este valor es esencial para construir relaciones saludables y un entorno positivo donde todos puedan desarrollarse plenamente.',
+      iconUrl: 'assets/nosotros/respeto.png'
+    },
+    {
+      title: 'Excelencia',
+      description: 'Buscamos formar jugadores que aspiren a la mejora constante, no solo en lo deportivo, sino también en su desarrollo personal. En Leones del Valle, excelencia significa dar siempre el máximo esfuerzo y superar los límites día a día.',
+      iconUrl: 'assets/nosotros/excelencia.png'
+    },
+    {
       title: 'Pasión por el Fútbol',
       description: 'Inculcamos amor y respeto por el deporte, enseñando que el esfuerzo y la dedicación son clave para alcanzar grandes metas.',
       iconUrl: 'assets/nosotros/pasion.png'
     },
     {
       title: 'Trabajo en Equipo',
-      description: 'Fomentamos la colaboración y el espíritu de equipo, enseñando que los triunfos más grandes se alcanzan juntos.',
+      description: 'El fútbol es un deporte colectivo, y en Leones del Valle promovemos la colaboración, la comunicación y el apoyo mutuo como herramientas fundamentales para alcanzar el éxito tanto dentro como fuera del campo.',
       iconUrl: 'assets/nosotros/equipo.png'
     },
     {
