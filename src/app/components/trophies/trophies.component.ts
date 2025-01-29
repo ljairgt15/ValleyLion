@@ -22,7 +22,16 @@ export class TrophiesComponent implements OnInit {
       rivals:8,
       dates: ['Diciembre 2023'],
       category: 'U10',
-      imageUrl: 'assets/logo.png',
+      imageUrl: 'assets/trophies/2-sub10-ecuavalle.jpg',
+    },
+    
+    {
+      name: 'Ecuavalle Cup',
+      position:'SUBCAMPEÓN',
+      rivals:8,
+      dates: ['Diciembre 2024'],
+      category: 'U10',
+      imageUrl: 'assets/trophies/2-sub10-ecuavalle.jpg',
     },
     {
       name: 'San Carlos JD PRO Events',
@@ -30,7 +39,8 @@ export class TrophiesComponent implements OnInit {
       rivals:8,
       dates: ['Marzo 2021'],
       category: 'U10',
-      imageUrl: 'assets/logo.png',
+      imageUrl: 'assets/trophies/2-sub10-ecuavalle.jpg',
+
     },
     {
       name: 'Oyambarillo',
@@ -38,7 +48,8 @@ export class TrophiesComponent implements OnInit {
       rivals:8,
       dates: ['Diciembre 2022'],
       category: 'U8',
-      imageUrl: 'assets/logo.png',
+      imageUrl: 'assets/trophies/1-sub8-oyam.jpg',
+
     },
     
     {
@@ -47,7 +58,8 @@ export class TrophiesComponent implements OnInit {
       rivals:6,
       dates: ['Diciembre 2022'],
       category: 'U10',
-      imageUrl: 'assets/logo.png',
+      imageUrl: 'assets/trophies/3-sub10-oyam.jpg',
+
     }
   ];
 
