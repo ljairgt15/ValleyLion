@@ -13,6 +13,7 @@ import { TeamsComponent } from './components/teams/teams.component';
 import { NewsComponent } from './components/news/news.component';
 import { NavComponent } from './components/nav/nav.component';
 import { CatalogTeamComponent } from './components/catalog-team/catalog-team.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CatalogTeamComponent } from './components/catalog-team/catalog-team.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    SweetAlert2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

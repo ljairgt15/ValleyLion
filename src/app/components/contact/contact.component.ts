@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AppConstants } from 'src/constants/AppConstants';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router'; // Importa Router
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contact',
@@ -28,12 +29,18 @@ export class ContactComponent implements OnInit {
 
   onSubmit(): void {
     if (this.contactForma.valid) {
-      const formData = this.contactForma.value;
-      console.log('Form Data Submitted:', formData);
-      //TODO JG poner un modal de que se ha enviado
-      this.router.navigate(['/noticias']);
+      Swal.fire({
+        title: "Excelente!",
+        text: "Pronto nos comunicaremos contigo!",
+        icon: "success"
+      });
+      this.contactForma.reset();
     } else {
-      console.log('Form is not valid');
+      Swal.fire({
+        title: "Oops...",
+        text: "Revisa la información ingresada",
+        icon: "error"
+      });
     }
   }
 
