@@ -18,34 +18,28 @@ export class NewsComponent implements OnInit {
       date: 'mayo 13, 2024'
     },
     {
-      title: 'COMUNICADO DE PRENSA: Juan Tuquerrez (13) al Vinotinto FC',
+      title: 'Juan Tuquerrez (13) al Vinotinto FC',
       description: 'FORMATIVAS PROFESIONALES',
       imageUrl: 'assets/news/juanitoNacho.jpg',
       date: 'mayo 13, 2024'
     },
     {
-      title: 'COMUNICADO DE PRENSA: Damián Gómez (13) al Vinotinto FC',
+      title: 'Damián Gómez (13) al Vinotinto FC',
       description: 'FORMATIVAS PROFESIONALES',
       imageUrl: 'assets/news/damianVinotinto.jpg',
       date: 'mayo 13, 2024'
     },
     {
-      title: 'COMUNICADO DE PRENSA: Damián Gómez (13) al Vinotinto FC',
-      description: 'FORMATIVAS PROFESIONALES',
-      imageUrl: 'assets/news/damianVinotinto.jpg',
-      date: 'mayo 13, 2024'
-    },
-    {
-      title: 'COMUNICADO DE PRENSA: Juan Tuquerrez (13) al Vinotinto FC',
-      description: 'FORMATIVAS PROFESIONALES',
+      title: 'SEGUIMOS ENLAZANDO RELACIONES CON LOS EMPRENDIMIENTOS DE NUESTRA COMUNIDAD',
+      description: 'CONVENIOS',
       imageUrl: 'assets/news/juanitoNacho.jpg',
-      date: 'mayo 13, 2024'
+      date: 'enero 01, 2025'
     },
     {
-      title: 'COMUNICADO DE PRENSA: Damián Gómez (13) al Vinotinto FC',
-      description: 'FORMATIVAS PROFESIONALES',
+      title: 'NUESTROS LEONES COMIENZAN A TOMAR RITMO COMPETITIVO',
+      description: 'FORMATIVAS',
       imageUrl: 'assets/news/damianVinotinto.jpg',
-      date: 'mayo 13, 2024'
+      date: 'febrero 01, 2025'
     },
   ];
 
