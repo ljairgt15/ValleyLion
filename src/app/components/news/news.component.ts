@@ -7,33 +7,39 @@ import { INews } from 'src/app/models/news';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-  @Input() numNews: number = 3;
+  @Input() numNews: number = 0;
 
   constructor() { }
   newsList: INews[] = [
     {
-      title: 'Nuestros procesos siguen logrando títulos y experiencias',
-      description: 'Procesos',
+      title: 'LEONES PRO, entrenamiento a alto nivel',
+      description: 'FORMATIVAS PROFESIONALES',
       imageUrl: 'assets/index/equipo2.jpg',
       date: 'mayo 13, 2024'
     },
     {
-      title: 'COMUNICADO DE PRENSA: Juan Tuquerrez (13) al Club Deportivo El Nacional',
-      description: 'Formativas',
+      title: 'Juan Tuquerrez (13) al Vinotinto FC',
+      description: 'FORMATIVAS PROFESIONALES',
       imageUrl: 'assets/news/juanitoNacho.jpg',
       date: 'mayo 13, 2024'
     },
     {
-      title: 'Independiente del Valle inauguró el primer estadio de Latinoamérica para un equipo femenino: Dragonas IDV',
-      description: 'Dragonas',
-      imageUrl: 'assets/index/equipo.jpg',
+      title: 'Damián Gómez (13) al Vinotinto FC',
+      description: 'FORMATIVAS PROFESIONALES',
+      imageUrl: 'assets/news/damianVinotinto.jpg',
       date: 'mayo 13, 2024'
     },
     {
-      title: 'COMUNICADO DE PRENSA: Juan Tuquerrez (13) al Club Deportivo El Nacional',
-      description: 'Formativas',
-      imageUrl: 'assets/index/equipo2.jpg',
-      date: 'mayo 13, 2024'
+      title: 'SEGUIMOS ENLAZANDO RELACIONES CON LOS EMPRENDIMIENTOS DE NUESTRA COMUNIDAD',
+      description: 'CONVENIOS',
+      imageUrl: 'assets/news/juanitoNacho.jpg',
+      date: 'enero 01, 2025'
+    },
+    {
+      title: 'NUESTROS LEONES COMIENZAN A TOMAR RITMO COMPETITIVO',
+      description: 'FORMATIVAS',
+      imageUrl: 'assets/news/damianVinotinto.jpg',
+      date: 'febrero 01, 2025'
     },
   ];
 
@@ -41,7 +47,10 @@ export class NewsComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.displayedNews = this.newsList.slice(0, this.numNews);
+    if(this.numNews!=0)
+      this.displayedNews = this.newsList.slice(0, this.numNews);
+    else
+      this.displayedNews = this.newsList
   }
 
 }

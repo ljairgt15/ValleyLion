@@ -8,8 +8,10 @@
             </div>
             <div class="col-md-10">
                 <div class="card-body">
-                    <h5 class="card-title">{{ title.timesWon ? title.timesWon : '' }} {{ title.name }}</h5>
+                    <h5 class="card-title">{{ title.timesWon ? title.timesWon : '' }}{{title.position}} {{ title.name }}</h5>
                     <p class="card-text text-muted">{{ title.category }}</p>
+                    <p class="card-text text-muted"> {{ title.rivals }} PARTICIPANTES</p>
+
                     <p class="card-text">
                         <small class="text-muted">{{ title.dates.join(', ') }}</small>
                     </p>

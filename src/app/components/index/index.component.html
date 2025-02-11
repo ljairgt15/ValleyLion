@@ -1,4 +1,18 @@
-<section class="hero-section">
+<section class="video-section" (click)="registrarInteraccion($event)">
+  <!-- Imagen de portada con mensaje (se muestra solo la primera vez) -->
+  <div *ngIf="mostrarPortada" class="portada">
+    <img src="assets/index/portada.jpg" alt="Portada">
+    <p class="mensaje-portada">Haz clic para empezar este viaje en nuestra manada</p>
+  </div>
+
+  <video #videoPlayer autoplay muted loop preload="auto" class="fullscreen-video">
+    <source src="assets/index/portada.mp4" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+  </video>
+</section>
+
+
+<!-- <section class="hero-section">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-4 text-center text-lg-left">
@@ -9,13 +23,13 @@
           ACADEMIA DE FÚTBOL<mark class="highlight">LEONES</mark><br>
           DEL VALLE
         </h1>
-        <i> <b>Donde el fútbol se convierte en grandeza</b></i>
+        <i class="legend"> <b>Donde el fútbol se convierte en grandeza</b></i>
       </div>
     </div>
   </div>
   <br>
   <br>
-</section>
+</section> -->
 <section class="wave-container">
   <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
     preserveAspectRatio="none" shape-rendering="auto">

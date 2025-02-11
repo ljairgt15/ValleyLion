@@ -9,24 +9,57 @@ import { Title } from 'src/app/models/title';
 export class TrophiesComponent implements OnInit {
   titles: Title[] = [
     {
-      name: 'Torneo Castro Loaiza',
-      dates: ['11 de diciembre del año 2023'],
+      name: 'Liga Parroquial Puembo',
+      position:'CAMPEÓN',
+      rivals:6,
+      dates: ['Enero 2023'],
       category: 'U12',
       imageUrl: 'assets/logo.png',
     },
     {
+      name: 'Torneo Castro Loaiza',
+      position:'SUBCAMPEÓN',
+      rivals:8,
+      dates: ['Diciembre 2023'],
+      category: 'U10',
+      imageUrl: 'assets/trophies/2-sub10-castro.jpg',
+    },
+    
+    {
+      name: 'Ecuavalle Cup',
+      position:'SUBCAMPEÓN',
+      rivals:8,
+      dates: ['Diciembre 2024'],
+      category: 'U10',
+      imageUrl: 'assets/trophies/2-sub10-ecuavalle.jpg',
+    },
+    {
       name: 'San Carlos JD PRO Events',
-      timesWon: 1,
-      dates: ['1955-56'],
-      category: 'U11',
-      imageUrl: 'assets/logo.png',
+      position:'TERCER LUGAR',
+      rivals:8,
+      dates: ['Marzo 2021'],
+      category: 'U10',
+      imageUrl: 'assets/trophies/2-sub10-ecuavalle.jpg',
+
     },
     {
       name: 'Oyambarillo',
-      timesWon: 1,
-      dates: ['2022'],
+      position:'CAMPEÓN',
+      rivals:8,
+      dates: ['Diciembre 2022'],
       category: 'U8',
-      imageUrl: 'assets/logo.png',
+      imageUrl: 'assets/trophies/1-sub8-oyam.jpg',
+
+    },
+    
+    {
+      name: 'Oyambarillo',
+      position:'TERCER LUGAR',
+      rivals:6,
+      dates: ['Diciembre 2022'],
+      category: 'U10',
+      imageUrl: 'assets/trophies/3-sub10-oyam.jpg',
+
     }
   ];
 

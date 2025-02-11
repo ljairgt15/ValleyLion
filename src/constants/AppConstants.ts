@@ -5,7 +5,7 @@ export class AppConstants {
     public static readonly INSTAGRAM_URL: string = "https://www.instagram.com/leones.oyambarillo";
     public static readonly TIKTOK_URL: string = "https://www.tiktok.com/@leones.oyambarillo";
     public static readonly ACADEMY_NAME: string = "Academia Formativa de Fútbol Leones del Valle";
-    public static readonly GMAIL: string = "leonesoyambarillo.admn@gmail.com";
+    public static readonly GMAIL: string = "leonesdelvalle.admn@gmail.com";
 
    
 

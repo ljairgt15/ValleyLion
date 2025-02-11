@@ -14,15 +14,15 @@
 
 .card-img {
   width: 100%;
-  max-height: 300px;  /* Limitar la altura de la imagen */
-  object-fit: cover;
+  max-height: 700;  /* Limitar la altura de la imagen */
+  object-fit: FILL;
 }
 
 .card-img-overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 20px;
+  padding: 0px;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -56,4 +56,20 @@
 }
 #newsCarousel{
   margin-bottom: 1%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(11, 56, 115, 0.5); /* Cambiar a un fondo negro semitransparente */
+  border-radius: 50%; /* Opcional: hace que las flechas tengan un fondo circular */
+  width: 40px; /* Ajusta el tamaño de las flechas si es necesario */
+  height: 40px;
+}
+
+/* Opcional: Estilo para las flechas si necesitas un color sólido */
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  font-size: 24px;
+  font-weight: bold;
+  color: white; /* Cambiar el color de las flechas */
+  text-align: center;
 }
