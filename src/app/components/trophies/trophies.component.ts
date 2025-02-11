@@ -22,7 +22,7 @@ export class TrophiesComponent implements OnInit {
       rivals:8,
       dates: ['Diciembre 2023'],
       category: 'U10',
-      imageUrl: 'assets/trophies/2-sub10-ecuavalle.jpg',
+      imageUrl: 'assets/trophies/2-sub10-castro.jpg',
     },
     
     {
